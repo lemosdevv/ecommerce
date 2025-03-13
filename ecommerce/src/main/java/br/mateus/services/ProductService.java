@@ -23,7 +23,7 @@ public class ProductService {
 
     public Product getProductById(Long id) {
         return productRepository.findById(id)
-                .orElseThrow(() -> new RuntimeException("Produto não encontrado"));
+                .orElseThrow(() -> new RuntimeException("Product not found"));
     }
 
     public Product updateProduct(Long id, Product productDetails) {
