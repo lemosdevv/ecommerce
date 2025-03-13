@@ -1,4 +1,4 @@
-package br.mateus.services;
+package br.mateus.security;
 
 import br.mateus.entity.User; 
 import br.mateus.repository.UserRepository;
