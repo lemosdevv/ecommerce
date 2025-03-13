@@ -9,6 +9,7 @@ import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 
 import java.util.Collection;
+import java.util.Collections;
 
 @Entity
 @Table(name = "users")
@@ -17,10 +18,18 @@ public class User implements UserDetails {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-    private String name;
+    private String username;
     private String email;
     private String password;
 
+    public User() {
+    }
+
+    public User(String username, String email, String password) {
+        this.username = username;
+        this.email = email;
+        this.password = password;
+    }
 
     public Long getId() {
         return id;
@@ -31,11 +40,11 @@ public class User implements UserDetails {
     }
 
     public String getName() {
-        return name;
+        return username;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setName(String username) {
+        this.username = username;
     }
 
     public String getEmail() {
@@ -56,12 +65,12 @@ public class User implements UserDetails {
 
     @Override
     public Collection<? extends GrantedAuthority> getAuthorities() {
-        return null;
+        return Collections.emptyList();
     }
 
     @Override
     public String getUsername() {
-        return email; 
+        return email;
     }
 
     @Override
@@ -71,12 +80,12 @@ public class User implements UserDetails {
 
     @Override
     public boolean isAccountNonLocked() {
-        return true; 
+        return true;
     }
 
     @Override
     public boolean isCredentialsNonExpired() {
-        return true; 
+        return true;
     }
 
     @Override
