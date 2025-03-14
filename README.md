@@ -32,7 +32,8 @@ API de E-commerce desenvolvida com Spring Boot, incluindo autenticação JWT, ge
 spring.datasource.url=jdbc:mysql://localhost:3306/sua_base_de_dados
 spring.datasource.username=seu_usuario
 spring.datasource.password=sua_senha
-spring.jpa.hibernate.ddl-auto=update
+spring.jpa.hibernate.ddl-auto=updat
+```
 
 ### 🔗 Endpoints da API
 **POST /auth/register - Registrar novo usuário**
