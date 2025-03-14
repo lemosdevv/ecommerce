@@ -28,7 +28,7 @@ public class UserService {
 
     public User updateUser (Long id, User userDetails) {
         User user = getUserById(id);
-        user.setName(userDetails.getName());
+        user.setUserName(userDetails.getUsername());
         user.setEmail(userDetails.getEmail());
 
         return userRepository.save(user);
