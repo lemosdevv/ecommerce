@@ -9,7 +9,6 @@ API de E-commerce desenvolvida com Spring Boot, incluindo autenticação JWT, ge
 - **Spring Security**
 - **Autenticação JWT**
 - **Banco de Dados MySQL**
-- **Swagger/OpenAPI**
 - **Maven**
 
 ## ✨ Funcionalidades
