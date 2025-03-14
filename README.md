@@ -17,7 +17,6 @@ API de E-commerce desenvolvida com Spring Boot, incluindo autenticação JWT, ge
 - **Geração de Token JWT**
 - **Gerenciamento de Produtos**
 - **Controle de Acesso por Roles** (ADMIN/USER)
-- **Documentação da API com Swagger UI**
 
 ## 🚀 Instalação
 
