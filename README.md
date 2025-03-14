@@ -4,7 +4,7 @@
 API de E-commerce desenvolvida com Spring Boot, incluindo autenticação JWT, gerenciamento de produtos e controle de acesso por funções.
 
 ## 🛠️ Tecnologias Utilizadas
-- **Java 17**
+- **Java 17+**
 - **Spring Boot 3.x**
 - **Spring Security**
 - **Autenticação JWT**
